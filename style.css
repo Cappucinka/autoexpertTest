@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Avalon';
+  src:    url('font/Avalon-Demi-webfont.eot');
+  src:    url('font/Avalon-Demi-webfont.eot?tfqnd3#iefix') format('embedded-opentype'),
+          url('font/Avalon-Demi-webfont.ttf') format('truetype'),
+          url('font/Avalon-Demi-webfont.woff') format('woff'),
+          url('font/Avalon-Demi-webfont.svg#Avalon') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-img {
+  display: inline-block;
+  width: 342px;
+  height: 342px;
+  margin-right: 39px;
+  position: relative;
+}
+
+.logo-img__big-cicle {
+  width: 100%;
+  height: 100%;
+  background-color: #261f0f;
+  border-radius: 50%;
+}
+
+.logo-img__triangle {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  right: -1px;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  transform: rotate(33deg);
+  transform-origin: 50% 100%;
+  overflow: hidden;
+}
+
+.logo-img__triangle::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  transform: rotate(113deg);
+  transform-origin: 50% 100%;
+}
+
+.logo-img__small-circle {
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 105px);
+  left: calc(50% - 105px);
+  width: 210px;
+  height: 210px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.logo-img__small-circle .logo-img__triangle::before {
+  background-color: #00adff;
+}
+
+.logo__text {
+  font-family: 'Avalon', Arial, Helvetica, sans-serif;
+  font-size: 112px;
+  font-weight: 900;
+  color: #261f0f;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.logo__line {
+  line-height: 115px;
+}
+
+.logo__name {
+  display: inline-block;
+  margin: 0;
+  letter-spacing: 9px;
+  position: relative;
+}
+
+.logo__name_addition_dot::before {
+  content: '';
+  position: absolute;
+  right: -20px;
+  bottom: 22px;
+  width: 15px;
+  height: 15px;
+  background-color: #261f0f;
+}
+
+.logo__name_color_blue {
+  color: #00adff;
+}
+
+.logo__small-name {
+  display: inline-block;
+  margin-left: -10px;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.logo__small-name-item {
+  margin: 0;
+}
+
+.logo__small-name-item:last-child {
+  letter-spacing: 1px;
+}
